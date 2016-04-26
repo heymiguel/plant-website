@@ -4,6 +4,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic|Crimson+Text:400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta charset="UTF-8">
 	<title>fabric website</title>
 </head>
@@ -12,12 +13,26 @@
 		<nav class=".u-cf">
 			<div class="container">
 				<ul>
-					<li><a href="">Work</li></a>
-					<li><a href="">Methodology</li></a>
-					<li><a href="">Jobs</li></a>
-					<li><a href="">Contact</li></a>
+					<li class="work"><a href="">Work
+						<div class="work-menu">
+						<ul>
+							<li>landscape</li>
+							<li class="building">
+								building
+							</li>
+							<span>gardens</span>
+							<li>urbanism</li>
+							<li>design</li>
+						</ul>
+						</div>
+					</li>	
+					</a>
+					<li><a href="">Methodology</a></li>
+					<li><a href="">Jobs</a></li>
+					<li><a href="">Contact</a></li>
 				</ul>
 				<img src="images/logo-PLANTArchitect.svg">
+				
 			</div>
 		</nav>
 		<div class="hero-section">
@@ -56,42 +71,56 @@
 	</section>
 	<section id="recent-projects">
 		<h2>Recent Projects</h2>
-		<div class="project firefighters u-cf">
-			<div class=" offset-by-one column one columns">
-				<h3>01</h3>
-			</div>
-			<div class="five columns ">
+		<div class="container">
+			<div class="project firefighters u-cf">
 				<h3>Canadian Firefighters Memorial</h3>
-				<p>
-					In collaboration with Canadian visual artist and novelist Douglas Coupland, PLANT Architect won a two-stage, national competition to both memorialize fallen firefighters and provide a place for their annual Ceremony Service on Ottawa’s Lebreton Flats. 
-					<button><a href="">view case study</a></button>
-				</p>
-				
-				<img src="images/recent_work/FireFighters-Memorial1.jpg">
+				<div class="five columns offset-by-one column ">
+					
+					<p>
+						In collaboration with Canadian visual artist and novelist Douglas Coupland, PLANT Architect won a two-stage, national competition to both memorialize fallen firefighters and provide a place for their annual Ceremony Service on Ottawa’s Lebreton Flats. 
+						<button><a href="">view case study</a></button>
+					</p>
+					
+					<img src="images/recent_work/FireFighters-Memorial1.jpg">
+				</div>
+				<div class="six columns right">
+					<img src="images/recent_work/FireFighters-Memorial2.jpg">
+					<img src="images/recent_work/FireFighters-Memorial3.jpg">
+				</div>
 			</div>
-			<div class="five columns right">
-				<img src="images/recent_work/FireFighters-Memorial2.jpg">
-				<img src="images/recent_work/FireFighters-Memorial3.jpg">
-			</div>
-		</div>
-		<div class="project live-work">
-			<div class=" offset-by-one column one columns">
-				<h3>02</h3>
-			</div>
-			<div class="five columns">
+			<div class="project live-work u-cf">
 				<h3>Berkeley Live-Work Building</h3>
-				<p>
-					Work on this existing live-work structure in downtown Toronto involved a 2,000 sf interior renovation and new cladding concepts for the exterior façades. This concept creates a more inviting entry that distinguishes the office entrance from the residential entrance, with an interior door that connects the owners’ Victorian house with the modern tower. 
-					<button><a href="">view case study</a></button>
-				</p>
-				
-				<img src="images/recent_work/Berkeley-LiveWork2.jpg">
-			</div>
-			<div class="five columns right">
-				<img src="images/recent_work/Berkeley-LiveWork3.jpg">
-				<img src="images/recent_work/Berkeley-LiveWork1.jpg">
+				<div class="five columns offset-by-one column">
+					<p>
+						Work on this existing live-work structure in downtown Toronto involved a 2,000 sf interior renovation and new cladding concepts for the exterior façades. This concept creates a more inviting entry that distinguishes the office entrance from the residential entrance, with an interior door that connects the owners’ Victorian house with the modern tower. 
+						<button><a href="">view case study</a></button>
+					</p>
+					
+					<img src="images/recent_work/Berkeley-LiveWork2.jpg">
+				</div>
+				<div class="six columns right">
+					<img src="images/recent_work/Berkeley-LiveWork3.jpg">
+					<img src="images/recent_work/Berkeley-LiveWork1.jpg">
+				</div>
 			</div>
 		</div>
 	</section>
+	<footer class="u-cf">
+		 <div class="container">
+		 	<ul class="footer-links">
+		 		<li>work</li>
+		 		<li>methodology</li>
+		 		<li>jobs</li>
+		 		<li>contact</li>
+		 	</ul>
+		 	<ul class="social-icons">
+		 		<li><i class="fa fa-instagram"></i></li>
+		 		<li><i class="fa fa-twitter"></i></li>
+		 		<li><i class="fa fa-facebook"></i></li>
+		 	</ul>
+		 </div>
+	 </footer>
 </body>
 </html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="js/main.js"></script>

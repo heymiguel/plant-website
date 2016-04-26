@@ -11,9 +11,7 @@ $(function(){
 		        window.location.hash = target;
 		    });
 		});
-
-		$('.the-rocket').on('click', function(){
-			console.log('hello');
-			$('.bubble').fadeToggle();
+		$('nav .work').mouseover(function(){
+			console.log('fire');
 		});
 });
