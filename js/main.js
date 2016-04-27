@@ -12,6 +12,9 @@ $(function(){
 		    });
 		});
 		$('nav .work').mouseover(function(){
-			console.log('fire');
+			$('.work-menu').fadeIn();
+		});
+		$('.work-menu').mouseleave(function(){
+			$('.work-menu').fadeOut();
 		});
 });
